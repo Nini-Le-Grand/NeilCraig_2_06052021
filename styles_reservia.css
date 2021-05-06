@@ -1,0 +1,114 @@
+#page {
+    max-width: 1440;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 14px;
+}
+
+
+header {
+    height: auto;
+    max-width: 1340px;
+    border: 3px solid blue;
+    margin: 10px;
+}
+
+        nav {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            height: 110px;
+            border: 2px dashed brown;
+        }
+
+                nav div {
+                    border:cyan 2px solid;
+                    height: 45px;
+                    margin: auto;
+                    padding: auto;
+                }
+                        #reservia {
+                            flex: 8;
+                        }
+                        #login {
+                            order: 3;
+                            flex: 1;
+                        
+                        }
+                        #ancres {
+                            display: flex;
+                            flex-direction: row;
+                            margin: auto;
+                            
+                            border-top: 2px solid blue;
+                            order: 2;
+                            flex: 2;
+                        }
+
+        #filtres {
+            border: 2px dashed yellow;
+            display: flex;
+            flex-direction: row;
+            margin-left: 5px;
+        }
+
+        .filtre {
+            border: 1px solid black;
+        }
+        
+
+
+
+
+        #information {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+#hebergements {
+    
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    border: 3px solid red;
+    margin: 5px;
+
+}
+
+#hebergement {
+    border: 2px dashed violet;
+    flex: 2;
+    height: 400px;
+    margin: 5px;
+}
+
+#populaire {
+    border: 2px dashed blueviolet;
+    flex: 1;
+    height: 400px;
+    margin: 5px;
+}
+
+#activites {
+    border: 2px solid green;
+
+}
+

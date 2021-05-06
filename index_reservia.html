@@ -2,11 +2,116 @@
 <html>
     <head>
         <meta charset="utf-8"/>
+        <link rel="stylesheet" href="styles_reservia.css"/>
+        <script src="https://kit.fontawesome.com/7f7cd5e7f3.js" crossorigin="anonymous"></script>
         <title>Réservia</title>
 
     </head>
 
+
+
+    <!--            Balises identifiants kit Font Awesome
+
+        - Etoile : <i class="fas fa-star"></i>
+        - Pointeur : <i class="fas fa-map-marker-alt"></i>
+        - Economique : <i class="fas fa-money-bill-wave"></i>
+        - Familial : <i class="fas fa-child"></i>
+        - Romantique : <i class="fas fa-heart"></i>
+        - Chien : <i class="fas fa-dog"></i>
+        - Info : <i class="fas fa-info"></i>
+        - Tendances : <i class="fas fa-chart-line"></i>                
+                                                                    -->
+
+
+
+
     <body>
-        <p><i class="fas fa-map-marker-alt"></i> Font Awesome</p>
+    <div id="page">    
+        <header>
+
+            <!--    Barre de navigation
+                        - Acueil
+                        - Inscription
+                        - Ancres            -->
+
+            <nav>
+                <div id="reservia"><a href="Page_Accueil"><img src="images/logo/Reservia.svg"/></a></div>
+                <div id="login"><a href="Page_inscription">S'inscrire</a></div>
+                <div id="ancres">
+                    <div id="ancreHebergements"><a href="#ancreHebergements">Hébergements</a></div>
+                    <div id="ancreActivites"><a href="#ancreActivites">Activités</a></div>
+                </div>
+            </nav>
+
+
+
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+
+
+
+            <!--    Barre de recherche 
+                        - Champ de recherche
+                        - Filtres               -->
+
+            <div id="recherche">
+                <form method="get" action="traitement.php">
+                    <p>
+                        <label for="champRecherche"><i class="fas fa-map-marker-alt"></i></label>
+                        <input type="search" name="recherche" id="champRecherche" placeholder="Marseilles, France" size="40"/>
+                        <input type="submit" name="envoyer" value="Rechercher">
+                    </p>
+                </form>
+            </div>
+
+
+            <div id="filtres">
+                <h2>Filtres</h2>
+                <div class="filtre">
+                    <div class="logo"><i class="fas fa-money-bill-wave"></i></div>
+                    <div><h2>Economique</h2></div>
+                </div>
+
+                <div class="filtre">
+                    <div class="logo"><i class="fas fa-child"></i><h2>Familial</h2></div>
+                    <div></div>
+                </div>
+
+                <div class="filtre">
+                    <div class="logo"><i class="fas fa-heart"></i></div>
+                    <div><h2>Romantique</h2></div>
+                </div>
+
+                <div class="filtre">
+                    <div class="logo"><i class="fas fa-dog"></i></div>
+                    <div><h2>Animaux autorisés<h2></div>
+                </div>
+
+            </div>
+
+
+
+            <div id="information">
+                <div id="infologo"><span class="fas fa-info"></span></div>
+                <div><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
+            </div>
+        </header>
+
+
+
+
+        <section id="hebergements">
+            <article id=hebergement></article>
+            <aside id="populaire"></aside>
+        </section>
+
+        <section id="activites">
+
+        </section>
+
+        <footer>
+
+        </footer>
+    </div>
     </body>
 </html>
