@@ -232,16 +232,20 @@ section a {
     margin: 0px 20px;
 }
 
+#logoTendances {
+    float: right;
+}
+
 #vignettesPopulaires {
     display: flex;
     flex-direction: column;
 }
-.vignettePopulaire {
+.vignettePopulaire a {
     display: flex;
     flex-direction: row;
     width: 340px;
     height: 140px;
-    margin: 20px 0px;
+    margin: 10px 0px;
     border: 5px solid white;
     border-radius: 15px;
     background-color: white;
@@ -278,3 +282,79 @@ section a {
     align-items: flex-end;
 }
 
+#vignettesActivites {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 450px;
+}
+
+.vignetteActivite {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow : 6px 6px 6px #F2F2F2 ;
+    overflow: hidden;
+}
+
+#vieuxPort {
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+#fortPomegues {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#ilesFrioul {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.vignetteActivite img {
+    min-width:100%;
+    min-height: 100%;
+}
+
+#parcCalanques {
+    height: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#dameGarde {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#parcLongchamp {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.vignetteActivite p {
+    margin-left: 10px;
+    font-weight: bold;
+    color: black;
+}
