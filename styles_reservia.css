@@ -1,245 +1,280 @@
-/*  Feuille de style pour la page principale du site Réservia       */
-
-/*  
-                    I - Définition de la page
-                    II - Définition du header
-*/
-
-
-
-
-/*                    I - Définition de la page                     */
-
-
-/*  - Importation de la police Raleway                              */
 @font-face {
     font-family: "Raleway";
     src: url(Raleway/Raleway-VariableFont_wght.ttf);
-    }
+}
 
-
-/*  - Mise en forme de la page générale                             */
 * {
-font-family: 'Raleway', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
+    font-family: 'Raleway', 'Cambria', 'Cochin', 'Georgia', 'Times', 'Times New Roman', serif;
 }
-        #page {
-        max-width: 1280px;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin: auto;
-        }
 
+#page {
+    max-width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: auto;
+}
 
-
-
-/*                     II - Définition du <header>                  */
-
-
-/*  - Navigation                                                    */
 nav {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-height: 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 110px;
 }
-        nav a {
-        color:#0065FC;
-        text-decoration: none;
-        }
+nav a {
+    color:#0065FC;
+    text-decoration: none;
+}
 
-        nav div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: 110px;
-        margin: auto;
-        padding: auto;
-        }
-                #reservia {
-                flex: 8;
-                display: flex;
-                justify-content: left;
-                }
-                #login {
-                order: 3;
-                flex: 1;
-                }
-                #ancres {
-                display: flex;
-                flex-direction: row;
-                margin: auto;
-                order: 2;
-                flex: 3;
-                }
-                        #ancreHebergements {
-                        border-top: 2px solid #0065FC;
-                        flex:1;
-                        }
-                        #ancreActivites {
-                        flex:1;
-                        }
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 110px;
+    margin: auto;
+    padding: auto;
+}
 
+#reservia {
+    flex: 8;
+    display: flex;
+    justify-content: left;
+}
 
+#login {
+    order: 3;
+    flex: 1;
+}
+               
+#ancres {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    order: 2;
+    flex: 3;
+}
 
-/*  - Champ recherche                                               */
+#ancreHebergements {
+    border-top: 2px solid #0065FC;
+    flex:1;
+}
+
+#ancreActivites {
+    flex:1;
+}
+
+/* Champ recherche */
 form  p {
-display: flex;
-flex-direction: row;
-height: 45px;
-margin: 30px 0px;
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    margin: 30px 0px;
 }
-        label {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 50px;
-        border: 2px solid #F2F2F2;
-        background-color: #F2F2F2;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        }
 
-        input[type="search"] {
-        display: flex;
-        font-weight: bold;
-        border: #F2F2F2 2px solid;
-        }
-                input:focus::placeholder {
-                color: white;
-                }
+label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    border: 2px solid #F2F2F2;
+    background-color: #F2F2F2;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
 
-        input[type="submit"] {
-        display: flex;
-        color: white;
-        font-family:'Raleway', sans-serif;
-        font-weight: bold;
-        background-color: #0065FC;
-        border: 1px #0065FC solid;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        }
+input[type="search"] {
+    display: flex;
+    font-weight: bold;
+    border: #F2F2F2 2px solid;
+}
 
+input:focus::placeholder {
+    color: white;
+}
 
+input[type="submit"] {
+    display: flex;
+    color: white;
+    font-family:'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: #0065FC;
+    border: 1px #0065FC solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
-
-/*  - Champ filtre                                                  */
+/* Champ filtre */
 #filtres {
-display:flex;
-flex-direction: row;
-justify-content: left;
-align-items: center;
-padding-left: 5px;
-font-weight: bold;
+    display:flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5px;
+    font-weight: bold;
 }       
-        .filtre {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-left: 20px;
-        border: 3px solid #F2F2F2;
-        padding-right: 15px;
-        border-radius: 30px 30px 30px 30px;
-        border-left: #DEEBFF;
-        }
-        
-        .logo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 5px;
-        height: 40px;
-        width: 40px;
-        border: 3px #DEEBFF;
-        background-color: #DEEBFF;
-        border-radius: 100%;
-        color: #0065FC;
-        }
 
-
-
-
-/*  - Champ information                                             */
-#information {
-display: flex;
-flex-direction: row;
-align-items: center;
-margin: 15px;
+.filtre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 20px;
+    border: 3px solid #F2F2F2;
+    padding-right: 15px;
+    border-radius: 30px 30px 30px 30px;
+    border-left: #DEEBFF;
 }
-        #infologo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #F2F2F2;
-        border-radius: 100%;
-        height: 17px;
-        width: 17px;
-        font-size: 0.6em;
-        color: #0065FC;
-        margin-right: 10px;
-        }
+        
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    height: 40px;
+    width: 40px;
+    border: 3px #DEEBFF;
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    color: #0065FC;
+}
 
+#information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+}
 
+#infologo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+    border-radius: 100%;
+    height: 17px;
+    width: 17px;
+    font-size: 0.6em;
+    color: #0065FC;
+    margin-right: 10px;
+}
 
+/* Sections */
+#logements {
+    display:flex;
+    flex-direction: row;
+}
 
-/*                      III - Définition des sections               */
-
-
-article a {
-        color:black;
-        text-decoration: none;
+section a {
+    color:black;
+    text-decoration: none;
 }
 
 #hebergement {
-        width: 900px;
-        background-color: #F2F2F2;
-        padding: 20px;
-        border-radius: 20px;
-        }
-                #vignettesHebergements {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                }
-                        .vignetteHebergement {
-                        width: 250px;
-                        height: 200px;
-                        margin: 20px 0px;
-                        border: 5px solid white;
-                        border-radius: 15px;
-                        background-color: white;
-                        overflow: hidden;
-                        }
-                                .photo {
-                                height: 115px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                overflow: hidden;
-                                }
-                                        .photo img {
-                                        width: 250px;
-                                        }
-        
-                                .text {
-                                margin-left: 15px;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-around;
-                                height: 85px;
-                                }
-                                        .nom {
-                                        font-weight: bold;
-                                        }
-        
-                                        .starTrue {
-                                        color: #0065FC;
-                                        }
-        
-                                        .starFalse {
-                                        color: #F2F2F2;
-                                        }
+    width: 900px;
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 20px;
+}
 
+#vignettesHebergements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+                        
+.vignetteHebergement {
+    width: 250px;
+    height: 200px;
+    margin: 20px 0px;
+    border: 5px solid white;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+                                
+.photoH {
+    height: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
+.photoH img {
+    width: 250px;
+}
+        
+.textH {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 85px;
+}
+
+.nom {
+    font-weight: bold;
+    word-wrap: wrap;
+}
+        
+.starTrue {
+    color: #0065FC;
+}
+        
+.starFalse {
+    color: #F2F2F2;
+}
+
+#populaires {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0px 20px;
+}
+
+#vignettesPopulaires {
+    display: flex;
+    flex-direction: column;
+}
+.vignettePopulaire {
+    display: flex;
+    flex-direction: row;
+    width: 340px;
+    height: 140px;
+    margin: 20px 0px;
+    border: 5px solid white;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.photoP {
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.photoP img {
+    height: 200px;
+}
+        
+.textP {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 210px;
+    margin: 0px 20px;
+}
+
+.textP div {
+    margin: 5px 0px;
+}
+
+.textP .notation {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+}
 
