@@ -113,7 +113,7 @@ input[type="submit"] {
     font-weight: bold;
 }       
 
-.filtre {
+.filtre a {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -122,6 +122,14 @@ input[type="submit"] {
     padding-right: 15px;
     border-radius: 30px 30px 30px 30px;
     border-left: #DEEBFF;
+    text-decoration: none;
+    color: black;
+}
+
+.filtre a:hover {
+    border: #0065FC 3px solid;
+    background-color: #DEEBFF;
+    color: #0065FC;
 }
         
 .logo {
@@ -190,6 +198,8 @@ section a {
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
+    box-shadow : 6px 6px 3px #F2F2F2 ;
+
 }
                                 
 .photoH {
@@ -250,6 +260,8 @@ section a {
     border-radius: 15px;
     background-color: white;
     overflow: hidden;
+    box-shadow : 6px 6px 3px #F2F2F2 ;
+
 }
 
 .photoP {
@@ -295,7 +307,7 @@ section a {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
-    box-shadow : 6px 6px 6px #F2F2F2 ;
+    box-shadow : 6px 6px 3px #F2F2F2 ;
     overflow: hidden;
 }
 
@@ -357,4 +369,27 @@ section a {
     margin-left: 10px;
     font-weight: bold;
     color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    margin-top: 20px;
+}
+
+footer div {
+    flex: auto;
+    margin: 50px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+li {
+    padding-bottom: 20px;
 }
