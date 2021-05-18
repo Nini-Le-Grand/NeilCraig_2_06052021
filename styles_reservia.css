@@ -8,10 +8,7 @@
 }
 
 header, section, #piedDePage {
-    max-width: 1280px;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 50px;
+    max-width: 1340px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -73,11 +70,22 @@ img {
     border-top: 2px solid #0065FC;
 }
 
-.lienAncre, #lienLogin {
-    color:#0065FC;
+#lienAncreHebergements, #lienAncreActivites, #lienLogin {
     text-decoration: none;
 }
 
+#lienLogin {
+    color: #0065FC;
+    font-weight: bold;
+}
+
+#lienAncreHebergements {
+    color: #0065FC;
+}
+
+#lienAncreActivites {
+    color: black;
+}
 /* Champ recherche */
 #zoneRechercher {
     display: flex;
@@ -111,7 +119,6 @@ img {
 }
 
 #champSubmit {
-
     border: 1px #0065FC solid;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -119,6 +126,11 @@ img {
     color: white;
     font-weight: bold;
     background-color: #0065FC;
+    cursor: pointer;
+}
+
+#champSubmit:hover {
+    box-shadow: 0px 0px 3px 2px #0065FC;
 }
 
 /* Champ filtre */
@@ -187,6 +199,7 @@ img {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 50px;
 }
 
 .nom {
@@ -226,6 +239,10 @@ img {
     box-shadow : 0px 3px 6px 3px rgb(221, 221, 221);
     background-color: white;
     overflow: hidden;
+}
+
+.lienHebergement:hover {
+    box-shadow : 0px 3px 6px 6px #d4d3d3 ;
 }
                                 
 .photoHebergement {
@@ -270,6 +287,10 @@ img {
     overflow: hidden;
 }
 
+.lienPopulaire:hover {
+    box-shadow : 0px 3px 6px 6px #d4d3d3;
+}
+
 .photoPopulaire {
     width: 130px;
 }
@@ -298,6 +319,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     height: 450px;
+    margin: 50px 0px;
 }
 
 .lienActivite {
@@ -307,6 +329,10 @@ img {
     border-radius: 15px;
     box-shadow : 0px 3px 6px 3px #F2F2F2 ;
     overflow: hidden;
+}
+
+.lienActivite:hover {
+    box-shadow : 0px 3px 6px 6px #d4d3d3;
 }
 
 #photoVieuxPort {
