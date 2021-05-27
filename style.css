@@ -403,8 +403,64 @@ footer {
 }
 
 @media all and (max-width:480px) {
-    nav {
-        background-color: brown;
+
+    header, section, #piedDePage {
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #navigation {
+        flex-wrap: wrap;
+        height: auto;
+        border: 1px dotted red;
+    }
+
+    #reservia {
+        width: 240px;
+        height: 70px;
+        border: 1px dashed green
+    }
+
+    #login {
+        width: 240px;
+        order: 2;
+    }
+
+    #ancres{
+        width: 480px;
+        order: 3;
+    }
+
+    #filtres {
+        flex-wrap: wrap;
+    }
+
+    #logements {
+        flex-direction: column-reverse;
+    }
+
+    #populaires {
+        margin-bottom: 30px;
+    }
+
+    #hebergements {
+        width: auto;
+    }
+
+    #vignettesHebergements {
+        flex-direction: column;
+    }
+
+    #vignettesActivites {
+        height: auto;
+    }
+
+    #piedDePage {
+        height: auto;
+        flex-direction: column;
     }
 }
 
