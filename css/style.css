@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('');
+}
+
+* {
+    font-family: 'Raleway', 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
 
 body {
     margin: 0;
