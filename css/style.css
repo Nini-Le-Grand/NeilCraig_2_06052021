@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Raleway';
-    src: url('');
+    src: url('../font/Raleway-VariableFont_wght.ttf');
 }
 
 * {
@@ -243,8 +243,8 @@ img {
 
 /* Article */
 #hebergements {
-    width: 850px;
-    padding: 20px;
+    width: 65%;
+    padding: 15px;
     border-radius: 20px;
     background-color: #F2F2F2;
 }
@@ -286,7 +286,7 @@ img {
 
 /* Aside */
 #populaires {
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px;
     background-color: #F2F2F2;
 }
@@ -426,8 +426,6 @@ footer {
         padding: 0;
     }
 
-
-
     #navigation {
         margin-top: 20px;
         justify-content: space-between;
@@ -464,8 +462,6 @@ footer {
        
     }
 
-
-
     #presentation {
         padding: 0px 20px;
     }
@@ -488,13 +484,12 @@ footer {
         margin-right: 10px;
     }
 
-
     #logements {
         flex-direction: column-reverse;
+        margin-bottom: 0px;
     }
 
     #populaires {
-        margin-bottom: 30px;
         border-radius: 0;
     }
 
@@ -541,6 +536,18 @@ footer {
         height: auto;
         flex-direction: column;
         margin: 0px 20px;
+    }
+
+    #piedDePage div {
+        margin-top: 15px;
+    }
+
+    .listeFooter {
+        width: 100%;
+    }
+
+    .listeFooter li {
+        margin-bottom: 13px; 
     }
 }
 
