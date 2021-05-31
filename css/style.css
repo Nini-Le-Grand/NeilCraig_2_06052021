@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Raleway";
-    src: url(Font/Raleway/Raleway-VariableFont_wght.ttf);
+    src: url(font/raleway/Raleway-VariableFont_wght.ttf);
 }
 
 * {
@@ -39,28 +39,32 @@ img {
 #navigation {
     display: flex;
     flex-wrap: wrap;
+    justify-content: right;
     height: 110px;
     margin-top: 2px;
 }
 
 #reservia {
     display: flex;
-    justify-content: left;
     align-items: center;
-    flex: 8;
+    margin-right: auto;
+}
+
+#imageReservia {
+
+    height: auto;
+    width: 110px;
 }
 
 #login {
-    flex: 1;
-    order: 3;
-}
-
-#lienLogin {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
+    order: 2;
+    width: 140px;
+}
+
+#lienLogin {
     color: #0065FC;
     text-decoration: none;
 }
@@ -71,19 +75,19 @@ img {
                
 #ancres {
     display: flex;
-    order: 2;
-    flex: 3;
+    justify-content: space-evenly;
+    order: 1;
+    width: 260px;
 }
 
 #ancreHebergements, #ancreActivites {
-    flex: 1;
+    width: 100%;
 }
 
 #lienAncreHebergements, #lienAncreActivites {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
     height: 100%;
     width: 100%;
 }
@@ -106,6 +110,7 @@ img {
     align-items: center;
     justify-content: center;
     width: 50px;
+    min-width: 35px;
     border: 2px solid #F2F2F2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -114,6 +119,7 @@ img {
 
 #champSearch {
     border: #F2F2F2 2px solid;
+    width: 369px;
 }
 
 #champSearch::placeholder {
@@ -143,9 +149,19 @@ img {
 /* Champ filtre */
 #filtres {
     display:flex;
-    align-items: center;
     margin-bottom: 30px;
-}       
+}
+
+#labelFiltres {
+    display: flex;
+    align-items: center;
+    height: 46px;
+}
+
+#boutonsFiltres {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .lienFiltre {
     display: flex;
@@ -301,14 +317,15 @@ img {
 }
 
 .photoPopulaire {
-    width: 130px;
+    width: 40%;
 }
       
 .textePopulaire {
     display: flex;
     flex-direction: column;
-    width: 210px;
-    margin: 10px 20px;
+    margin: 10px 0px;
+    margin-left: 20px;
+    flex: 1;
 }
 
 .textePopulaire div {
@@ -319,6 +336,7 @@ img {
     display: flex;
     align-items:flex-end;
     flex: 1;
+    
 }
 
 /* Activités */
@@ -402,41 +420,74 @@ footer {
     text-decoration: underline;
 }
 
-@media all and (max-width:480px) {
+@media all and (max-width:600px) {
 
     header, section, #piedDePage {
-        max-width: 480px;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0;
     }
 
+
+
     #navigation {
-        flex-wrap: wrap;
-        height: auto;
-        border: 1px dotted red;
+        margin-top: 20px;
+        justify-content: space-between;
+        height: 120px;
     }
 
     #reservia {
-        width: 240px;
-        height: 70px;
-        border: 1px dashed green
+        padding-left: 20px;
+        justify-content: left;
     }
 
     #login {
-        width: 240px;
-        order: 2;
+        width: auto;
+        order: 1;
+        justify-content: right;
+        padding-right: 20px;
     }
 
     #ancres{
-        width: 480px;
-        order: 3;
+        order: 2;
+        width: 600px;
+        height: 60px;
+    }
+
+    #lienAncreHebergements, #lienAncreActivites {
+        display: flex;
+        justify-content: center;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    #lienAncreHebergements:hover, #lienAncreActivites:hover {
+        border-bottom: 3px solid #0065FC;
+        border-top: 3px solid white;
+       
+    }
+
+
+
+    #presentation {
+        padding: 0px 20px;
+    }
+
+    #zoneRechercher {
+        margin: 30px 20px;
     }
 
     #filtres {
-        flex-wrap: wrap;
+        margin: 0px 20px;
+        flex-direction: column;
     }
+
+    #boutonsFiltres>div {
+        margin-bottom: 10px;
+    }
+
+    .lienFiltre {
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+
 
     #logements {
         flex-direction: column-reverse;
@@ -444,27 +495,56 @@ footer {
 
     #populaires {
         margin-bottom: 30px;
+        border-radius: 0;
+    }
+
+    .lienPopulaire {
+        width: auto;
     }
 
     #hebergements {
         width: auto;
+        background-color: white;
     }
 
     #vignettesHebergements {
         flex-direction: column;
     }
 
+    .lienHebergement {
+        width: auto;
+    }
+
+    #activites {
+        margin: 0px 20px;
+    }
+
     #vignettesActivites {
         height: auto;
+    }
+
+    #vignettesActivites>div {
+        width: 100%;
+    }
+
+    .lienActivite {
+        width: auto;
+        height: 190px;
+        margin: 10px 0px;
+    }
+
+    #photoVieuxPort, #photoFortDePomegues, #photoIlesDuFrioul, #photoParcDesCalanques, #photoNotreDameDeLaGarde, #photoParcLongchamp {
+        height: 75%;
     }
 
     #piedDePage {
         height: auto;
         flex-direction: column;
+        margin: 0px 20px;
     }
 }
 
-@media all and (max-width:1280px) and (min-width: 481) {
+@media all and (max-width:1024px) and (min-width:601px) {
     #logements {
         flex-direction: column-reverse;
     }
@@ -472,12 +552,16 @@ footer {
     #vignettesPopulaires {
         flex-direction: row;
         justify-content: space-between;
-        flex-wrap: wrap;
         margin-bottom: 40px;
     }
 
+    .lienPopulaire {
+        width: auto;
+    }
+
     .textePopulaire {
-        width: 150px;
+        flex: 1;
+        border: 1px solid blue;
     }
 
     #hebergements {

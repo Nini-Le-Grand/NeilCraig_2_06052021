@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
         <script src="https://kit.fontawesome.com/7f7cd5e7f3.js" crossorigin="anonymous"></script>
         <title>Reservia</title>
     </head>
@@ -13,7 +13,7 @@
             <header id="hautDePage">
                 <nav id="navigation">
                     <div id="reservia">
-                        <a id="lienAccueil" href="Page_Accueil"><img src="images/logo/Reservia.svg"/></a>
+                        <a id="lienAccueil" href="Page_Accueil"><img id="imageReservia"src="images/logo/Reservia.svg"/></a>
                     </div>
                     <div id="login">
                         <a id="lienLogin" href="Page_inscription">S'inscrire</a>
@@ -28,8 +28,10 @@
                     </div>
                 </nav>
 
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre ville ou en pleine nature</p>
+                <div id="presentation">
+                    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </div>
 
                 <div id="recherche">
                     <form method="get" action="traitement.php">
@@ -37,50 +39,54 @@
                             <label id="logoLabel" for="champSearch">
                                 <i class="fas fa-map-marker-alt"></i>
                             </label>
-                            <input type="search" id="champSearch" name="recherche" placeholder=" Marseille, France" size="40"/>
-                            <input type="submit" id="champSubmit" name="envoyer" value="Rechercher">
+                            <input type="search" id="champSearch" name="recherche" placeholder=" Marseille, France" size="20"/>
+                            <input type="submit" id="champSubmit" name="envoyer" value="Rechercher"/>
                         </p>
                     </form>
                 </div>
 
 
                 <div id="filtres">
-                    <div class="fontBold">Filtres</div>
+                    <div id="labelFiltres">
+                        <span class="fontBold">Filtres</span>
+                    </div>
 
-                    <div id="filtreEconomique">
-                        <a class="lienFiltre" href="">
-                            <div class="logoFiltre">
-                                <i class="fas fa-money-bill-wave"></i>
-                            </div>
-                            <div class="fontBold">Economique</div>
-                        </a>
-                    </div>
-            
-                    <div id="filtreFamilial">
-                        <a class="lienFiltre" href="">
-                            <div class="logoFiltre">
-                                <i class="fas fa-child"></i>
-                            </div>
-                            <div class="fontBold">Familial</div>
-                        </a>
-                    </div>
-            
-                    <div id="filtreRomantique">
-                        <a class="lienFiltre" href="">
-                            <div class="logoFiltre">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="fontBold">Romantique</div>
-                        </a>
-                    </div>
-            
-                    <div id="filtreAnimaux">
-                        <a class="lienFiltre" href="">
-                            <div class="logoFiltre">
-                                <i class="fas fa-dog"></i>
-                            </div>
-                            <div class="fontBold">Animaux autorisés</div>
-                        </a>
+                    <div id="boutonsFiltres">
+                        <div id="filtreEconomique">
+                            <a class="lienFiltre" href="">
+                                <div class="logoFiltre">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                </div>
+                                <div class="fontBold">Economique</div>
+                            </a>
+                        </div>
+                
+                        <div id="filtreFamilial">
+                            <a class="lienFiltre" href="">
+                                <div class="logoFiltre">
+                                    <i class="fas fa-child"></i>
+                                </div>
+                                <div class="fontBold">Familial</div>
+                            </a>
+                        </div>
+                
+                        <div id="filtreRomantique">
+                            <a class="lienFiltre" href="">
+                                <div class="logoFiltre">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="fontBold">Romantique</div>
+                            </a>
+                        </div>
+                
+                        <div id="filtreAnimaux">
+                            <a class="lienFiltre" href="">
+                                <div class="logoFiltre">
+                                    <i class="fas fa-dog"></i>
+                                </div>
+                                <div class="fontBold">Animaux autorisés</div>
+                            </a>
+                        </div>
                     </div>
                 </div>
 
