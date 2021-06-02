@@ -130,6 +130,10 @@ img {
     color: white;
 }
 
+#champSearch:focus {
+        outline: 0;
+}
+
 #champSubmit {
     border: 1px #0065FC solid;
     border-top-right-radius: 10px;
@@ -139,6 +143,10 @@ img {
     font-weight: bold;
     background-color: #0065FC;
     cursor: pointer;
+}
+
+.boutonSubmitMobile {
+    display: none;
 }
 
 #champSubmit:hover {
@@ -409,7 +417,7 @@ footer {
 .listeFooter {
     list-style-type: none;
     padding-left: 0px;
-    margin-right: 200px;
+    margin-right: 150px;
 }
 
 .listeFooter li {
@@ -420,7 +428,7 @@ footer {
     text-decoration: underline;
 }
 
-@media all and (max-width:600px) {
+@media all and (max-width:620px) {
 
     header, section, #piedDePage {
         padding: 0;
@@ -446,7 +454,7 @@ footer {
 
     #ancres{
         order: 2;
-        width: 600px;
+        width: 620px;
         height: 60px;
     }
 
@@ -467,7 +475,29 @@ footer {
     }
 
     #zoneRechercher {
-        margin: 30px 20px;
+        margin: 0px 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    #champSearch {
+        width: 100%;
+    }
+
+    .boutonSubmitDesktop {
+        display: none;
+    }
+
+    .boutonSubmitMobile {
+        display: flex;
+        min-width: 45px;
+        align-items: center;
+        justify-content: center;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 10px;
+        margin-left: -5px;
+
     }
 
     #filtres {
@@ -551,9 +581,28 @@ footer {
     }
 }
 
-@media all and (max-width:1280px) and (min-width:1001px) {
+@media all and (max-width:1280px) and (min-width:621px) {
     #logements {
         flex-direction: column-reverse;
+        margin-bottom: 0px;
+    }
+
+    #zoneRechercher {
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    #filtres {
+        flex-direction: column;
+    }
+
+    #boutonsFiltres>div {
+        margin-bottom: 10px;
+    }
+
+    .lienFiltre {
+        margin-left: 0px;
+        margin-right: 10px;
     }
 
     section {
@@ -581,6 +630,14 @@ footer {
         width: 32%;
     }
 
+    .textePopulaire {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 85px;
+        margin-left: 15px;
+    }
+
     .lienPopulaire {
         flex-direction: column;
         height: 220px;
@@ -591,13 +648,9 @@ footer {
         width: auto;
         height: 115px;
     }
-    .textePopulaire {
-        margin-left: 5px;
-        height: 85px;
-    }
 
     #hebergements {
-        margin-top: 40px;
+        margin-top: 10px;
         width: auto;
         border-radius: 0px;
         background-color: white;
@@ -636,5 +689,10 @@ footer {
 
     .listeFooter {
         width: 100%
+    }
+
+    #piedDePage>div {
+        width: 32%;
+        margin: 20px;
     }
 }
