@@ -428,7 +428,7 @@ footer {
     text-decoration: underline;
 }
 
-@media all and (max-width:620px) {
+@media screen and (max-width:620px) {
 
     header, section, #piedDePage {
         padding: 0;
