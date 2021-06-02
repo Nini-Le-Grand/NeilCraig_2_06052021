@@ -428,7 +428,7 @@ footer {
     text-decoration: underline;
 }
 
-@media screen and (max-width:620px) {
+@media screen and (max-width:650px) {
 
     header, section, #piedDePage {
         padding: 0;
@@ -454,7 +454,7 @@ footer {
 
     #ancres{
         order: 2;
-        width: 620px;
+        width: 650px;
         height: 60px;
     }
 
@@ -588,7 +588,7 @@ footer {
     }
 }
 
-@media all and (max-width:1280px) and (min-width:621px) {
+@media all and (max-width:1280px) and (min-width:651px) {
     #logements {
         flex-direction: column-reverse;
         margin-bottom: 0px;
