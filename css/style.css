@@ -358,10 +358,14 @@ img {
     margin-bottom: 50px;
 }
 
+#vignettesActivites>div {
+    width: 23%;
+}
+
 .lienActivite {
     display: flex;
     flex-direction: column;
-    width: 290px;
+    width: 100%;
     border-radius: 15px;
     box-shadow : 0px 3px 6px 3px #F2F2F2 ;
     overflow: hidden;
