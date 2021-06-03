@@ -42,12 +42,13 @@
                             <input type="search" id="champSearch" name="recherche" placeholder=" Marseille, France" size="15"/>
                             <input type="submit" id="champSubmit" name="envoyer" class="boutonSubmitDesktop" value="Rechercher"/>
                             <span class="boutonSubmitMobile">
-                                <i class="fas fa-search"></i>
+                                <a id="lienSubmitMobile" href="">
+                                    <i class="fas fa-search"></i>
+                                </a>
                             </span>
                         </p>
                     </form>
                 </div>
-
 
                 <div id="filtres">
                     <div id="labelFiltres">
@@ -101,8 +102,8 @@
                 </div>
             </header>
 
-            <section id="logements">
-                <article id="hebergements">
+            <div id="logements">
+                <section id="hebergements">
                     <h2>Hébergements à Marseille</h2>
                     <div id="vignettesHebergements">
 
@@ -112,7 +113,9 @@
                                     <img class="imageAjustee" src="images/hebergements/cannebiere.jpg" alt="Auberge de la Cannebière"/>
                                 </div>
                                 <div class="texteHebergement">
-                                    <div class="nom"><span class="fontBold">Aubege de la Cannebière</span></div>
+                                    <div class="nom">
+                                        <span class="fontBold">Aubege de la Cannebière</span>
+                                    </div>
                                     <div class="prix">Nuit à partir de <strong>25€</strong></div>
                                     <div class="notation">
                                         <span class="starTrue">
@@ -281,9 +284,9 @@
                         </div>
                     </div>
                     <h3 class="fontBold"><a href="" id="lienPlus">Afficher plus</a></h3>
-                </article>
+                </section>
 
-                <aside id="populaires">
+                <section id="populaires">
                     <h2 class="fontTitle">Les plus populaires <i id="logoTendances" class="fas fa-chart-line"></i></h2>
                     <div id="vignettesPopulaires">
 
@@ -374,8 +377,8 @@
                             </a>
                         </div>
                     </div>
-                </aside>
-            </section>
+                </section>
+            </div>
 
             <section id="activites">
                 <h2 class="fontTitle">Activités à Marseille</h2>
@@ -440,30 +443,30 @@
 
             <footer>
                 <div id="piedDePage">
-                    <div id="aPropos">
+                    <section id="aPropos">
                         <h3><span class="fontBold">A propos</span></h3>
                         <ul class="listeFooter">
                             <li><a class="lienFooter" href="">Fonctionnement du site</a></li>
                             <li><a class="lienFooter" href="">Conditions générales de vente</a></li>
                             <li><a class="lienFooter" href="">Données et confidentialité</a></li>
                         </ul>
-                    </div>
+                    </section>
                     
-                    <div id="nosHebergements">
+                    <section id="nosHebergements">
                         <h3><span class="fontBold">Nos hébergements</span></h3>
                         <ul class="listeFooter">
                             <li><a class="lienFooter" href="">Charte qualité</a></li>
                             <li><a class="lienFooter" href="">Soumettre votre hôtel</a></li>
                         </ul>
-                    </div>
+                    </section>
 
-                    <div id="assistance">
+                    <section id="assistance">
                         <h3><span class="fontBold">Assistance</span></h3>
                         <ul class="listeFooter">
                             <li><a class="lienFooter" href="">Centre d'aide</a></li>
                             <li><a class="lienFooter" href="">Nous contacter</a></li>
                         </ul>
-                    </div>
+                    </section>
                 </div>
             </footer>
 
