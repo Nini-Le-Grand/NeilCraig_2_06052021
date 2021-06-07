@@ -97,6 +97,10 @@ img {
     margin-top: -2px;
 }
 
+h1 {
+    font-size: x-large;
+}
+
 /* Champ Rechercher */
 #zoneRechercher {
     display: flex;
